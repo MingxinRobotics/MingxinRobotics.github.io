@@ -83,9 +83,7 @@
       <div class="container narrow">
         <h2>Abstract</h2>
         <p>
-          Write your abstract here. This template mirrors the structure of a modern paper project
-          page: a compact title block, project links, a strong visual teaser, method highlights,
-          qualitative results, quantitative tables, video demos, and citation details.
+          Autonomous surgical manipulation requires precise action generation with low-latency policy inference. Existing generative policies commonly couple multimodal grounding with iterative action refinement. Once action-relevant information has been identified, repeatedly revisiting high-dimensional multimodal representations may be unnecessary for subsequent action refinement. SurgAct is an efficient flow-matching policy that decouples multimodal grounding from iterative action refinement. To realize this decoupling, SurgAct first maps multimodal representations to action-specific conditioning features for each future action in the predicted chunk. Conditioned on these features, SurgAct performs iterative refinement primarily in action space. Across four surgical manipulation tasks on a custom-developed microsurgical robot, SurgAct achieves an average success rate of 92%, outperforming the strongest baseline by 16 percentage points while reducing inference latency by 73%. These results demonstrate that SurgAct enables precise surgical manipulation with low-latency policy inference.
         </p>
         <p>
           Keep the abstract concise and readable for both technical readers and visitors who only
