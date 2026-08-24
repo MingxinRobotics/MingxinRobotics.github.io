@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Paper Title | Project Page</title>
+  <meta name="description" content="Project page for Your Paper Title.">
+  <meta property="og:title" content="Your Paper Title">
+  <meta property="og:description" content="A concise one-sentence summary of your paper.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="venue">Conference 2026 / Journal Name</p>
+        <h1>Your Paper Title Goes Here</h1>
+        <p class="subtitle">A short, readable subtitle that explains the core idea in one sentence.</p>
+
+        <div class="authors" aria-label="Authors">
+          <a href="#">First Author</a>
+          <span>1</span>
+          <a href="#">Second Author</a>
+          <span>1,2</span>
+          <a href="#">Third Author</a>
+          <span>2</span>
+          <a href="#">Corresponding Author</a>
+          <span>1</span>
+        </div>
+
+        <div class="affiliations">
+          <span>1 University / Lab Name</span>
+          <span>2 Company / Institute Name</span>
+        </div>
+
+        <div class="actions" aria-label="Project links">
+          <a class="button" href="#" aria-label="Paper PDF">
+            <span class="icon">P</span>
+            Paper
+          </a>
+          <a class="button" href="#" aria-label="arXiv page">
+            <span class="icon">A</span>
+            arXiv
+          </a>
+          <a class="button" href="#" aria-label="Code repository">
+            <span class="icon">C</span>
+            Code
+          </a>
+          <a class="button" href="#" aria-label="Dataset">
+            <span class="icon">D</span>
+            Data
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section media-lead">
+      <div class="container">
+        <div class="paper-visual" role="img" aria-label="Main paper figure placeholder">
+          <div class="visual-grid">
+            <div class="visual-panel tall">
+              <span>Input</span>
+            </div>
+            <div class="visual-panel">
+              <span>Method</span>
+            </div>
+            <div class="visual-panel">
+              <span>Output</span>
+            </div>
+            <div class="visual-panel wide">
+              <span>Results / Teaser Figure</span>
+            </div>
+          </div>
+        </div>
+        <p class="caption">Replace this block with your teaser image, architecture diagram, or main result figure.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <h2>Abstract</h2>
+        <p>
+          Write your abstract here. This template mirrors the structure of a modern paper project
+          page: a compact title block, project links, a strong visual teaser, method highlights,
+          qualitative results, quantitative tables, video demos, and citation details.
+        </p>
+        <p>
+          Keep the abstract concise and readable for both technical readers and visitors who only
+          need the high-level contribution. Mention the problem, your method, the main result, and
+          why it matters.
+        </p>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="container">
+        <h2>Method Overview</h2>
+        <div class="method-layout">
+          <div class="diagram-card">
+            <div class="pipeline">
+              <div>Data</div>
+              <div>Encoder</div>
+              <div>Model</div>
+              <div>Policy / Prediction</div>
+            </div>
+          </div>
+          <div class="method-copy">
+            <p>
+              Summarize the main pipeline here. Use this space to describe the key modules,
+              training objective, inference process, or system design.
+            </p>
+            <ul>
+              <li><strong>Contribution 1.</strong> Replace this with the first core idea.</li>
+              <li><strong>Contribution 2.</strong> Replace this with the second core idea.</li>
+              <li><strong>Contribution 3.</strong> Replace this with the main empirical finding.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Results</h2>
+        <div class="results-grid">
+          <article class="result-card">
+            <div class="result-visual">Task A</div>
+            <h3>Qualitative Result</h3>
+            <p>Describe what this example shows and why it is important.</p>
+          </article>
+          <article class="result-card">
+            <div class="result-visual alt">Task B</div>
+            <h3>Robust Generalization</h3>
+            <p>Describe new scenes, objects, domains, or evaluation settings.</p>
+          </article>
+          <article class="result-card">
+            <div class="result-visual warm">Task C</div>
+            <h3>Failure Analysis</h3>
+            <p>Briefly summarize representative limitations or edge cases.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="container narrow">
+        <h2>Quantitative Evaluation</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Benchmark 1</th>
+                <th>Benchmark 2</th>
+                <th>Benchmark 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Baseline A</td>
+                <td>42.1</td>
+                <td>55.4</td>
+                <td>61.0</td>
+              </tr>
+              <tr>
+                <td>Baseline B</td>
+                <td>48.6</td>
+                <td>57.3</td>
+                <td>63.7</td>
+              </tr>
+              <tr class="highlight-row">
+                <td>Ours</td>
+                <td>61.8</td>
+                <td>70.5</td>
+                <td>76.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="caption">Replace these numbers with your actual benchmark metrics.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Videos</h2>
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-placeholder">Demo 1</div>
+            <p>Short caption for the first demo.</p>
+          </div>
+          <div class="video-card">
+            <div class="video-placeholder">Demo 2</div>
+            <p>Short caption for the second demo.</p>
+          </div>
+          <div class="video-card">
+            <div class="video-placeholder">Demo 3</div>
+            <p>Short caption for the third demo.</p>
+          </div>
+          <div class="video-card">
+            <div class="video-placeholder">Demo 4</div>
+            <p>Short caption for the fourth demo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band">
+      <div class="container narrow">
+        <h2>BibTeX</h2>
+        <pre><code>@inproceedings{yourpaper2026,
+  title     = {Your Paper Title Goes Here},
+  author    = {First Author and Second Author and Third Author},
+  booktitle = {Conference Name},
+  year      = {2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container narrow">
+      <p>
+        This is a reusable project-page template inspired by common academic website layouts.
+        Replace all placeholder text, links, and visuals with your own paper materials.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
