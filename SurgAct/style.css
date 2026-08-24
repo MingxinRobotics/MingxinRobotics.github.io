@@ -63,11 +63,11 @@ a:hover {
 }
 
 h1 {
-  max-width: 980px;
+  max-width: 1300px;
   margin: 0 auto;
-  font-size: clamp(2.4rem, 7vw, 5rem);
-  line-height: 1.05;
-  letter-spacing: 0;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   font-weight: 800;
 }
 
