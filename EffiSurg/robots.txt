@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mingxinrobotics.github.io/EffiSurg/sitemap.xml
