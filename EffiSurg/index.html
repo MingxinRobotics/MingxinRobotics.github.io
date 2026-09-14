@@ -24,20 +24,20 @@
     <nav class="top-nav" aria-label="Primary navigation">
       <a class="wordmark" href="#top"><span class="brand-icon" aria-hidden="true">e</span>EffiSurg<span class="brand-dot">.</span></a>
       <div class="nav-links"><a href="#method">Method</a><a href="#demos">Demonstrations</a><a href="#results">Results</a></div>
-      <a class="nav-paper" href="EiffSurg.pdf" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a>
+      <a class="nav-paper" href="EiffSurg.pdf?v=20260915-fig1" target="_blank" rel="noopener">Read paper <span aria-hidden="true">↗</span></a>
     </nav>
     <div class="hero-content">
       <p class="eyebrow light"><span class="live-dot"></span> AUTONOMOUS MICROSURGICAL MANIPULATION</p>
       <h1>EffiSurg<span class="brand-dot">.</span></h1>
       <p class="hero-title">Autonomous Microsurgical Robotic Manipulation<br class="desktop-break"> via Efficient Flow Matching</p>
       <p class="hero-description">Ground once. Refine efficiently.<br>Precise bimanual manipulation with lightweight action generation.</p>
-      <div class="hero-actions"><a class="button primary" href="#demos"><span aria-hidden="true">▶</span> Watch demonstrations</a><a class="button glass" href="EiffSurg.pdf" target="_blank" rel="noopener">Explore the paper <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-actions"><a class="button primary" href="#demos"><span aria-hidden="true">▶</span> Watch demonstrations</a><a class="button glass" href="EiffSurg.pdf?v=20260915-fig1" target="_blank" rel="noopener">Explore the paper <span aria-hidden="true">↗</span></a></div>
     </div>
     <div class="hero-bottom"><a class="scroll-cue" href="#overview"><span aria-hidden="true">↓</span> Explore the research</a><span class="hero-caption">KNOT TYING · EX VIVO TISSUE</span><button id="hero-toggle" class="hero-toggle" type="button" aria-label="Play background video">▶</button></div>
   </header>
 
   <div class="paper-layout">
-    <aside class="outline"><p>IN THIS PROJECT</p><nav aria-label="Page contents"><a href="#overview" class="active">Overview</a><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#platform">Platform & tasks</a><a href="#demos">Demonstrations</a><a href="#results">Results</a><a href="#analysis">Analysis & ablations</a><a href="#paper">Paper</a></nav><a class="outline-download" href="EiffSurg.pdf" target="_blank" rel="noopener">Paper PDF ↗</a></aside>
+    <aside class="outline"><p>IN THIS PROJECT</p><nav aria-label="Page contents"><a href="#overview" class="active">Overview</a><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#platform">Platform & tasks</a><a href="#demos">Demonstrations</a><a href="#results">Results</a><a href="#analysis">Analysis & ablations</a><a href="#paper">Paper</a></nav><a class="outline-download" href="EiffSurg.pdf?v=20260915-fig1" target="_blank" rel="noopener">Paper PDF ↗</a></aside>
     <main>
       <section id="overview" class="section overview">
         <p class="eyebrow">01 / THE IDEA</p><h2>Less computation.<br><span class="accent">More precise action.</span></h2>
@@ -49,7 +49,7 @@
       <section id="abstract" class="section">
         <p class="eyebrow">02 / ABSTRACT</p><h2>Efficient generation for<br>delicate manipulation.</h2>
         <div class="abstract-text"><p>Generative action policies based on diffusion or flow matching offer a promising approach to autonomous microsurgical manipulation, but their iterative generation incurs substantial inference overhead. EffiSurg is an efficient flow-matching policy that decouples multimodal grounding from iterative action refinement.</p><p>It extracts action-specific conditioning features from multimodal representations once per predicted action chunk. Conditioned on these features, a lightweight flow expert iteratively refines actions without repeated interaction with the full multimodal representations.</p><p>Evaluated on a bimanual microsurgical robotic system across needle handoff and knot tying in phantom and ex vivo settings, EffiSurg reduces end-to-end policy inference latency by <strong>67% to 49 ms</strong> while increasing average task success by <strong>16.3 percentage points to 96.3%</strong> relative to the coupled Transformer-based baseline.</p></div>
-        <figure class="figure concept"><a href="figure/fig1.png" target="_blank" rel="noopener" aria-label="Open conceptual overview in full resolution"><img src="assets/images/fig1.webp" loading="lazy" width="2550" height="1701" alt="Conceptual vision of EffiSurg-enabled microsurgical robotics with multimodal observations and instrument actions"></a><figcaption><span>FIG. 01</span> Conceptual vision of EffiSurg-enabled microsurgery. The human model illustrates a prospective application; experiments use phantom and ex vivo tissue.</figcaption></figure>
+        <figure class="figure concept"><a href="figure/fig1.png?v=20260915-fig1" target="_blank" rel="noopener" aria-label="Open robotic system and evaluation tasks in full resolution"><img src="assets/images/fig1.webp?v=20260915-fig1" loading="lazy" width="2342" height="1066" alt="Bimanual microsurgical robotic system with a surgical microscope and wrist cameras (left); needle handoff and knot tying in phantom and ex vivo settings (right)"></a><figcaption><span>FIG. 01</span> Overview of the robotic system and evaluation tasks. (Left) The bimanual microsurgical robotic system is equipped with a surgical microscope and two wrist cameras. (Right) EffiSurg learns needle handoff (left column) and knot tying (right column) in phantom (top row) and ex vivo (bottom row) settings, yielding four evaluation tasks.</figcaption></figure>
       </section>
 
       <section id="method" class="section">
@@ -101,7 +101,7 @@
         <div class="integration"><div><h3>Preserving multi-step generation</h3><p>Increasing the number of flow-integration steps improves success but increases inference time. Performance begins to saturate around <strong>K = 10</strong>, the default configuration.</p><p>EffiSurg’s efficiency comes from reducing computation within each refinement step.</p></div><figure class="figure"><a href="figure/fig8.png" target="_blank" rel="noopener" aria-label="Open flow integration ablation in full resolution"><img src="assets/images/fig8.webp" loading="lazy" width="2143" height="1514" alt="Success rate and inference latency versus number of flow-integration steps, with the default at K equals 10"></a><figcaption><span>FIG. 08</span> Flow-integration steps versus success and latency.</figcaption></figure></div>
       </section>
 
-      <section id="paper" class="section paper-section"><p class="eyebrow">08 / READ THE RESEARCH</p><h2>Explore EffiSurg.</h2><p>Autonomous Microsurgical Robotic Manipulation<br>via Efficient Flow Matching</p><a class="button dark" href="EiffSurg.pdf" target="_blank" rel="noopener">Read the full paper <span aria-hidden="true">↗</span></a><span class="pdf-meta">PDF · 8 pages · 29.9 MB</span></section>
+      <section id="paper" class="section paper-section"><p class="eyebrow">08 / READ THE RESEARCH</p><h2>Explore EffiSurg.</h2><p>Autonomous Microsurgical Robotic Manipulation<br>via Efficient Flow Matching</p><a class="button dark" href="EiffSurg.pdf?v=20260915-fig1" target="_blank" rel="noopener">Read the full paper <span aria-hidden="true">↗</span></a><span class="pdf-meta">PDF · 8 pages · 31.0 MB</span></section>
     </main>
   </div>
   <footer class="site-footer"><a class="wordmark" href="#top">EffiSurg<span class="brand-dot">.</span></a><p>Autonomous microsurgery through efficient flow matching.</p><a href="#top">Back to top ↑</a></footer>
