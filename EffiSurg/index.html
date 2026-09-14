@@ -11,15 +11,15 @@
   <meta property="og:description" content="Ground once. Refine efficiently. 96.3% success, 49 ms inference, four microsurgical tasks.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mingxinrobotics.github.io/EffiSurg/">
-  <meta property="og:image" content="https://mingxinrobotics.github.io/EffiSurg/assets/posters/phantom-handoff-ours-microscope.jpg">
+  <meta property="og:image" content="https://mingxinrobotics.github.io/EffiSurg/assets/posters/phantom-handoff-ours-microscope.jpg?v=20260914-video-new">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="app.js"></script>
+  <script defer src="app.js?v=20260914-video-new"></script>
 </head>
 <body>
   <a class="skip-link" href="#overview">Skip to content</a>
   <header class="hero" id="top">
-    <video class="hero-video" muted loop playsinline preload="none" poster="assets/posters/phantom-handoff-ours-microscope.jpg" aria-label="EffiSurg performing needle handoff on phantom tissue"></video>
+    <video class="hero-video" muted loop playsinline preload="none" poster="assets/posters/hero.jpg?v=20260914-video-new" aria-label="EffiSurg performing knot tying on ex vivo tissue"></video>
     <div class="hero-shade"></div>
     <nav class="top-nav" aria-label="Primary navigation">
       <a class="wordmark" href="#top"><span class="brand-icon" aria-hidden="true">e</span>EffiSurg<span class="brand-dot">.</span></a>
@@ -33,7 +33,7 @@
       <p class="hero-description">Ground once. Refine efficiently.<br>Precise bimanual manipulation with lightweight action generation.</p>
       <div class="hero-actions"><a class="button primary" href="#demos"><span aria-hidden="true">▶</span> Watch demonstrations</a><a class="button glass" href="EiffSurg.pdf" target="_blank" rel="noopener">Explore the paper <span aria-hidden="true">↗</span></a></div>
     </div>
-    <div class="hero-bottom"><a class="scroll-cue" href="#overview"><span aria-hidden="true">↓</span> Explore the research</a><span class="hero-caption">NEEDLE HANDOFF · PHANTOM TISSUE</span><button id="hero-toggle" class="hero-toggle" type="button" aria-label="Play background video">▶</button></div>
+    <div class="hero-bottom"><a class="scroll-cue" href="#overview"><span aria-hidden="true">↓</span> Explore the research</a><span class="hero-caption">KNOT TYING · EX VIVO TISSUE</span><button id="hero-toggle" class="hero-toggle" type="button" aria-label="Play background video">▶</button></div>
   </header>
 
   <div class="paper-layout">
@@ -79,11 +79,11 @@
         </div>
         <div class="demo-toolbar"><div class="view-selector" role="group" aria-label="Select camera view"><button type="button" data-view="microscope" aria-pressed="true">Microscope</button><button type="button" data-view="left" aria-pressed="false">Left wrist</button><button type="button" data-view="right" aria-pressed="false">Right wrist</button></div><div class="playback-controls"><label for="playback-rate">Speed</label><select id="playback-rate"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select><button type="button" id="play-both">▶ Play both</button><button type="button" id="restart-both" aria-label="Restart both videos">↺</button></div></div>
         <div class="comparison-grid">
-          <article class="video-card ours"><div class="video-heading"><h3><span class="status-dot"></span>EffiSurg <span class="method-label">OURS</span></h3><span>49 ms / inference</span></div><video id="ours-video" controls muted playsinline preload="none" poster="assets/posters/phantom-handoff-ours-microscope.jpg" aria-label="EffiSurg needle handoff on phantom tissue, microscope view"></video><div class="video-footer"><span class="camera-label">Microscope view</span><span id="ours-success">20/20 successful trials</span></div></article>
-          <article class="video-card"><div class="video-heading"><h3>Transformer Flow Policy</h3><span>147 ms / inference</span></div><video id="baseline-video" controls muted playsinline preload="none" poster="assets/posters/phantom-handoff-baseline-microscope.jpg" aria-label="Transformer Flow Policy needle handoff on phantom tissue, microscope view"></video><div class="video-footer"><span class="camera-label">Microscope view</span><span id="baseline-success">18/20 successful trials</span></div></article>
+          <article class="video-card ours"><div class="video-heading"><h3><span class="status-dot"></span>EffiSurg <span class="method-label">OURS</span></h3><span>49 ms / inference</span></div><video id="ours-video" controls muted playsinline preload="none" poster="assets/posters/phantom-handoff-ours-microscope.jpg?v=20260914-video-new" aria-label="EffiSurg needle handoff on phantom tissue, microscope view"></video><div class="video-footer"><span class="camera-label">Microscope view</span><span id="ours-success">20/20 successful trials</span></div></article>
+          <article class="video-card"><div class="video-heading"><h3>Transformer Flow Policy</h3><span>147 ms / inference</span></div><video id="baseline-video" controls muted playsinline preload="none" poster="assets/posters/phantom-handoff-baseline-microscope.jpg?v=20260914-video-new" aria-label="Transformer Flow Policy needle handoff on phantom tissue, microscope view"></video><div class="video-footer"><span class="camera-label">Microscope view</span><span id="baseline-success">18/20 successful trials</span></div></article>
         </div>
         <p id="demo-status" class="demo-status" role="status" aria-live="polite">Needle handoff on phantom tissue · Microscope view</p><p class="fine-print">Success counts summarize all 20 evaluation trials per task, not the individual clips. “Play both” starts the independent recordings together; trial durations may differ. Playback speed is relative to the supplied videos.</p>
-        <noscript><p>Enable JavaScript to switch between all 24 videos. <a href="assets/video/phantom-handoff-ours-microscope.mp4">Watch EffiSurg needle handoff</a> · <a href="assets/video/phantom-handoff-baseline-microscope.mp4">Watch the baseline</a>.</p></noscript>
+        <noscript><p>Enable JavaScript to switch between all 24 videos. <a href="assets/video/phantom-handoff-ours-microscope.mp4?v=20260914-video-new">Watch EffiSurg needle handoff</a> · <a href="assets/video/phantom-handoff-baseline-microscope.mp4?v=20260914-video-new">Watch the baseline</a>.</p></noscript>
       </section>
 
       <section id="results" class="section">
@@ -104,6 +104,6 @@
       <section id="paper" class="section paper-section"><p class="eyebrow">08 / READ THE RESEARCH</p><h2>Explore EffiSurg.</h2><p>Autonomous Microsurgical Robotic Manipulation<br>via Efficient Flow Matching</p><a class="button dark" href="EiffSurg.pdf" target="_blank" rel="noopener">Read the full paper <span aria-hidden="true">↗</span></a><span class="pdf-meta">PDF · 8 pages · 29.9 MB</span></section>
     </main>
   </div>
-  <footer class="site-footer"><a class="wordmark" href="#top">EffiSurg<span class="brand-dot">.</span></a><p>Autonomous microsurgery through efficient flow matching.</p><a href="#top">Back to top ↑</a><p class="reference-credit">Page structure inspired by <a href="https://awilekong.github.io/ResTacVLA/" target="_blank" rel="noopener">ResTacVLA</a>.</p></footer>
+  <footer class="site-footer"><a class="wordmark" href="#top">EffiSurg<span class="brand-dot">.</span></a><p>Autonomous microsurgery through efficient flow matching.</p><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>

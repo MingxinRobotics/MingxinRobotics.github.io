@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  const mediaVersion = '20260914-video-new';
   const tasks = {
     'phantom-handoff': { label: 'Needle handoff on phantom tissue', ours: 20, baseline: 18 },
     'phantom-knot': { label: 'Knot tying on phantom tissue', ours: 20, baseline: 17 },
@@ -23,8 +24,8 @@
       const previousTime = preserveTime ? video.currentTime : 0;
       video.pause();
       const name = `${task}-${method}-${view}`;
-      video.poster = `assets/posters/${name}.jpg`;
-      video.src = `assets/video/${name}.mp4`;
+      video.poster = `assets/posters/${name}.jpg?v=${mediaVersion}`;
+      video.src = `assets/video/${name}.mp4?v=${mediaVersion}`;
       video.setAttribute('aria-label', `${method === 'ours' ? 'EffiSurg' : 'Transformer Flow Policy'}: ${tasks[task].label}, ${views[view]}`);
       video.onloadedmetadata = () => {
         video.playbackRate = Number(rate.value);
@@ -77,7 +78,7 @@
   const heroToggle = document.querySelector('#hero-toggle');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let heroUserPaused = reducedMotion.matches || Boolean(navigator.connection?.saveData);
-  function loadHero() { if (!hero.getAttribute('src')) hero.src = 'assets/video/hero.mp4'; }
+  function loadHero() { if (!hero.getAttribute('src')) hero.src = `assets/video/hero.mp4?v=${mediaVersion}`; }
   function playHero() { loadHero(); hero.play().catch(() => {}); }
   heroToggle.addEventListener('click', () => {
     heroUserPaused = !hero.paused;
